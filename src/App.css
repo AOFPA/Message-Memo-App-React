@@ -1,38 +1,77 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300&display=swap');
+
+* {
+  font-family: 'Sarabun', sans-serif;
+}
+
+.app-section {
+  padding: 20px;
+  max-width: 800px;
+  min-width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.app-container {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-container input,
+textarea,
+.app-edit-note input,
+textarea {
+  padding: 10px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  max-width: 100%;
+  min-width: auto;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.app-container button,
+.app-edit-note button {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: green;
+  border: 0px;
   color: white;
+  box-sizing: border-box;
+  max-width: 100%;
+  min-width: auto;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.app-container button:hover,
+.app-edit-note button:hover {
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-note {
+  border-radius: 20px;
+  padding: 10px;
+  background-color: rgb(50, 153, 227);
+  margin-top: 10px;
+}
+
+.app-note a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.app-note a:hover {
+  cursor: pointer;
+}
+
+.app-edit-note {
+  border: 3px solid black;
+  padding: 10px;
+  border-radius: 20px;
+  position: fixed;
+  width: 250px;
+  min-width: auto;
+  max-width: 250px;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  background-color: yellowgreen;
 }
